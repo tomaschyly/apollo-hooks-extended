@@ -1,6 +1,6 @@
 {
-  "name": "apollo-hooks-extended",
-  "version": "1.0.1",
+  "name": "tomaschyly-apollo-hooks-extended",
+  "version": "1.1.0",
   "description": "Library of additional hooks and wrappers for Apollo Client",
   "private": false,
   "keywords": [
@@ -20,31 +20,31 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/marc-ed-raffalli/apollo-hooks-extended"
+    "url": "https://github.com/tomaschyly/apollo-hooks-extended"
   },
-  "homepage": "https://github.com/marc-ed-raffalli/apollo-hooks-extended",
-  "bugs": "https://github.com/marc-ed-raffalli/apollo-hooks-extended/issues",
+  "homepage": "https://github.com/tomaschyly/apollo-hooks-extended",
+  "bugs": "https://github.com/tomaschyly/apollo-hooks-extended/issues",
   "scripts": {
     "build": "run-s clean check-code compile test",
     "clean": "rm -rf dist",
     "compile": "tsc -p .",
     "test": "jest",
-    "test:watch": "yarn test --watchAll",
-    "test:coverage": "yarn test --coverage",
-    "coverage": "yarn test:coverage && coveralls < coverage/lcov.info",
+    "test:watch": "npm run test --watchAll",
+    "test:coverage": "npm run test --coverage",
+    "coverage": "npm run test:coverage && coveralls < coverage/lcov.info",
     "check-code": "run-p lint prettier",
     "lint": "eslint ./src",
-    "lint:fix": "yarn lint --fix",
+    "lint:fix": "npm run lint --fix",
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write .",
-    "prepublishOnly": "yarn build",
+    "prepublishOnly": "npm run build",
     "version": "git add -A .",
     "postversion": "git push && git push --tags"
   },
   "peerDependencies": {
     "@apollo/client": "^3.0.0",
-    "graphql": "^15.0.0",
-    "react": "^16.8.0 || ^17.0.0"
+    "graphql": "^15.0.0 || ^16.0.0",
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
     "@apollo/client": "^3.2.0",

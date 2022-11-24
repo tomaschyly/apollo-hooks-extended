@@ -10,24 +10,30 @@ Let's start with big kudos for the authors and maintainers of Apollo, fantastic 
 This package is a complementary library providing additional features for
 [@apollo/client](https://www.apollographql.com/docs/react/).
 
+## Notice about my version
+
+I have only done update for this package to work with the latest React versions.
+
+All credit for original work goes to [original creator](https://github.com/marc-ed-raffalli/apollo-hooks-extended).
+
 ## Installation
 
 **Using Yarn**:
 
 ```bash
-$ yarn add apollo-hooks-extended
+$ yarn add tomaschyly-apollo-hooks-extended
 
 # or
-$ yarn add apollo-hooks-extended
+$ yarn add tomaschyly-apollo-hooks-extended
 ```
 
 **Using Npm**:
 
 ```bash
-$ npm install apollo-hooks-extended
+$ npm install tomaschyly-apollo-hooks-extended
 
 # or
-$ npm i apollo-hooks-extended
+$ npm i tomaschyly-apollo-hooks-extended
 ```
 
 ## Features
